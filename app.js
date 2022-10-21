@@ -1,6 +1,6 @@
 const read = require('./read')
 const add = require('./add')
-// const present = require('./present')
+const present = require('./present')
 // const remove = require('./remove')
 // const update = require('./update') 
 
@@ -15,4 +15,10 @@ const add = require('./add')
 }
     var oldNote = read()
     add(note, oldNote)
+}
+
+
+if(data[2] == 'read') {
+
+present(read()) 
 }
